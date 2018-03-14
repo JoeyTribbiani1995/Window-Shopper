@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D7EC227E2058D37A0068E94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC227D2058D37A0068E94E /* AppDelegate.swift */; };
-		D7EC22802058D37A0068E94E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC227F2058D37A0068E94E /* ViewController.swift */; };
+		D7EC22802058D37A0068E94E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC227F2058D37A0068E94E /* MainVC.swift */; };
 		D7EC22832058D37A0068E94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EC22812058D37A0068E94E /* Main.storyboard */; };
 		D7EC22852058D37A0068E94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7EC22842058D37A0068E94E /* Assets.xcassets */; };
 		D7EC22882058D37A0068E94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EC22862058D37A0068E94E /* LaunchScreen.storyboard */; };
+		D7EC22952058D4AE0068E94E /* customTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC22942058D4AE0068E94E /* customTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7EC227A2058D37A0068E94E /* Window-Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window-Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7EC227D2058D37A0068E94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7EC227F2058D37A0068E94E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7EC227F2058D37A0068E94E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D7EC22822058D37A0068E94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7EC22842058D37A0068E94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7EC22872058D37A0068E94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7EC22892058D37A0068E94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EC22942058D4AE0068E94E /* customTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,30 @@
 			isa = PBXGroup;
 			children = (
 				D7EC227D2058D37A0068E94E /* AppDelegate.swift */,
-				D7EC227F2058D37A0068E94E /* ViewController.swift */,
 				D7EC22812058D37A0068E94E /* Main.storyboard */,
+				D7EC22932058D4690068E94E /* View Controllers */,
+				D7EC22922058D4550068E94E /* Views */,
 				D7EC22842058D37A0068E94E /* Assets.xcassets */,
 				D7EC22862058D37A0068E94E /* LaunchScreen.storyboard */,
 				D7EC22892058D37A0068E94E /* Info.plist */,
 			);
 			path = "Window-Shopper";
+			sourceTree = "<group>";
+		};
+		D7EC22922058D4550068E94E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC22942058D4AE0068E94E /* customTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7EC22932058D4690068E94E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC227F2058D37A0068E94E /* MainVC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7EC22802058D37A0068E94E /* ViewController.swift in Sources */,
+				D7EC22802058D37A0068E94E /* MainVC.swift in Sources */,
 				D7EC227E2058D37A0068E94E /* AppDelegate.swift in Sources */,
+				D7EC22952058D4AE0068E94E /* customTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
